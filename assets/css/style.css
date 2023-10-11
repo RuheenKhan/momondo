@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+    padding: 0 150px;
+}
+
+header {
+    background-color: #151D3D;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header .active {
+    color: #A13352;
+    font-weight: 600;
+}
+
+
+
+header .left, header .right {
+    display: flex;
+}
+
+header .logo {
+    width: 150px;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header .left ul li a {
+    padding: 0 20px;
+    font-size: 15px;
+}
+
+header .right ul li a {
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+header .right .login {
+    color: #AFCD60;
+    font-weight: 600;
+}
+
+
+/* header section end  */
+
+
+
+/* banner section start  */
+.banner {
+    background-image: url("../img/beach1.jpg");
+    width: 100%;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.banner p {
+    padding-top: 80px;
+    font-size: 70px;
+    color: #000000d6;
+    font-weight: 100;
+}
+
+.banner h3 {
+    color: #000000;
+    font-weight: 800;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+
+/* banner section end  */
