@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #fff;
+    /* color: #fff; */
     text-decoration: none;
     list-style: none;
     font-family: 'Josefin Sans', sans-serif;
@@ -22,10 +22,6 @@ header {
     
 }
 
-header .active {
-    color: #A13352;
-    font-weight: 600;
-}
 
 
 
@@ -35,26 +31,36 @@ header .left, header .right {
 
 header .logo {
     width: 150px;
+    margin-right: 15px;
 }
 
 header ul li {
     display: inline-block;
 }
 
-header .left ul li a {
-    padding: 0 20px;
-    font-size: 15px;
-}
-
-header .right ul li a {
+header .left ul li a, header .right ul li a{
     padding: 0 15px;
     font-size: 15px;
+    color: #fff;
 }
+
+
+header .right ul li a {
+    padding: 0 10px;
+}
+
 
 header .right .login {
     color: #AFCD60;
     font-weight: 600;
 }
+
+header .left .active {
+    color: #A13352;
+    font-weight: 600;
+}
+
+
 
 
 /* header section end  */
@@ -68,7 +74,7 @@ header .right .login {
     height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
-    
+    position: relative;
 }
 
 .banner p {
@@ -81,9 +87,189 @@ header .right .login {
 .banner h3 {
     color: #000000;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 26px;
     padding-top: 30px;
 }
 
 
+.banner form {
+    background-color: #5E317A;
+    height: auto;
+    width: 80%;
+    margin: auto;
+    padding: 0 10px;
+    position: absolute;
+    top: 79%;
+    padding-bottom: 15px;
+}
+
+.banner form button {
+    background-color: #513471;
+    border: none;
+    /* padding: 8px 15px; */
+    width: 100px;
+    height: 30px;
+    margin-right: 1px;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.banner form .active {
+    background-color: #FF2C49;
+}
+
+.banner form input {
+    margin: 10px 0;
+    height: 36px;
+    width: 200px;
+    border: none;
+}
+
+.banner form span {
+    background-color: #fff;
+    padding: 8px 6px 11px 6px;
+    color: #575656;
+}
+
+.banner form .fa-repeat {
+    color: #A9D8FA;
+}
+
+.banner form .cal {
+    width: 100px;
+    margin-right: 0;
+}
+
+.banner form .search {
+    border-radius: 80px;
+    width: 80px;
+    height: 80px;
+    background-color: #FD566B;
+    text-align: center;
+    color: #fff;
+    margin-left: 25px;
+    position: absolute;
+    top: 10%;
+}
+
+form .search::placeholder {
+    color: #fff;
+    font-size: 15px;
+    padding-left: 10px;
+    
+}
+
+.fa-repeat {
+   margin: 0 10px;
+}
+
+.banner form a {
+    color: #fff;
+    font-size: 15px;
+    border-bottom: 2px solid #fff;
+    margin-right: 15px;
+}
+
+.banner form .blue {
+    color: #B1A8D3;
+    border: none;
+}
+
+.fa-suitcase-rolling,.fa-ticket,.fa-square {
+    color: #fff;
+}
+
+
+
+
 /* banner section end  */
+
+
+/* fun section start  */
+.fun {
+    background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../img/mountain.jpg");
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+.fun h2 {
+    padding: 40px;
+}
+
+.fun .fun-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fun .fun-container div {
+    background-color: #0000006a;
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    padding-top: 25px;
+}
+
+.fun .fun-container .icon{
+    font-size: 40px;
+    padding: 10px;
+}
+
+.fun .fun-container div p {
+    padding: 5px;
+}
+/* fun section end  */
+
+
+/* travel section start  */
+.travel {
+    background-image:linear-gradient(rgba(52,39,83,0.9), rgba(52,39,83,0.9)), url("../img/cloud-plane.jpg");
+    width: 100%;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.travel .travel-container {
+    position: absolute;
+    text-align: center;
+    right: 15%;
+    top: 30%;
+}
+
+.travel .travel-container h2  {
+    padding-bottom: 30px;
+    
+}
+
+.travel .travel-container p {
+    padding-bottom: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.travel .travel-container input {
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: 550px;
+    height: 40px;
+    padding-left: 10px;
+    margin-right: 15px;
+}
+
+.travel .travel-container input::placeholder {
+    color: #fff;
+}
+
+.travel .travel-container button {
+    width: 150px;
+    height: 40px;
+    color: rgba(52,39,83);
+    font-size: 16px;
+}
+/* travel section end  */
