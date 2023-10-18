@@ -50,28 +50,53 @@
                 <button><i class="fa-solid fa-car"></i> Cars</button>
                 <br>
 
-                <span><i class="fa-solid fa-location-dot"></i></span><input type="text" placeholder="Enter origin city">
+                <label for="city">City</label>
+                <span><i class="fa-solid fa-location-dot"></i></span><input type="text" placeholder="Enter origin city" id="city">
 
                 <i class="fa-solid fa-repeat"></i>
                 
-                <span><i class="fa-solid fa-location-dot"></i></span><input type="text" style="margin-right: 8px;" placeholder="Enter destination city">
+                
+                <label for="destination">destination</label>
+                <span><i class="fa-solid fa-location-dot"></i></span><input type="text" id="destination" style="margin-right: 8px;" placeholder="Enter destination city">
 
 
-                <span><i class="fa-regular fa-calendar"></i></span><input type="text" class="cal" placeholder="23 Mar">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" class="date">
+
+                <label for="date1">Date</label>
+                <input type="date" id="date1" name="date1" class="date">
 
 
-                <span><i class="fa-regular fa-calendar"></i></span><input type="text" class="cal" style="margin-right: 8px;" placeholder="28 Mar">
+                
+                <label for="passenger">passenger</label>
+                <span><i class="fa-solid fa-users"></i></span><select name="passenger" id="passenger">
+                    <option selected>Passenger number</option>
+                    <option value="pass1">1 Passenger</option>
+                    <option value="pass2">2 Passenger</option>
+                    <option value="pass3">3 Passenger</option>
+                </select>
 
-
-                <span><i class="fa-solid fa-users"></i></span><input type="text" placeholder="1 Passenger">
-
-                <input type="search" placeholder="Search" class="search"><br>
+                <input type="button" value="Search" class="search"><br>
 
                 
 
-                <i class="fa-solid fa-suitcase-rolling"></i><a href="javascript:void()">  Trip type: Return trip</a>
+                <i class="fa-solid fa-suitcase-rolling"></i>
+                <label for="trip">Trip</label>
+                <select name="trip" id="trip" class="type">
+                    <option selected>Trip type: Return trip</option>
+                    <option value="">trip1</option>
+                    <option value="">trip2</option>
+                    
+                </select>
 
-                <i class="fa-solid fa-ticket"></i><a href="javascript:void()"> Ticket class: Economy</a>
+                <i class="fa-solid fa-ticket"></i>
+                <label for="ticket">Ticket</label>
+                <select name="ticket" id="ticket" class="type">
+                    <option selected>Ticket class: Economy</option>
+                    <option value="">Classic</option>
+                    <option value="">Bussiness</option>
+                    
+                </select>
 
                 <i class="fa-regular fa-square"></i><a href="javascript:void()" class="blue"> Direct flights only</a>
 
@@ -104,12 +129,12 @@
             </div>
             <div>
                 <i class="fa-solid fa-sailboat icon"></i>
-                <h3>180 M</h3>
+                <h3>180 KM</h3>
                 <p>SAILING DISTANCE</p>
             </div>
             <div>
                 <i class="fa-solid fa-mountain-sun icon"></i>
-                <h3>570 M</h3>
+                <h3>570 DAYS</h3>
                 <p>SPENT ADVENTURE</p>
             </div>
             <div>
@@ -136,6 +161,89 @@
         
     </div>
     <!-- travel section end  -->
+
+
+    <!-- destination section start  -->
+    <section class="destinations container">
+        <h2>POPULAR DESTINATIONS</h2>
+        <ul>
+            <li>
+                <img src="./assets/img/rome.jpg" alt="" srcset="">
+                <h4>$999 Rome, florence & venice 9-Night Vacation w/Air</h4>
+                <p>This is the lowest price we've seen in four years for a one night</p>
+            </li>
+            <li>
+                <img src="./assets/img/australia.jpg" alt="" srcset="">
+                <h4>$1099 Australia:Sydney & Fiji Vacation w/Air Save $550</h4>
+                <p>This is the lowest price we've seen in four years for a one night</p>
+            </li>
+            <li>
+                <img src="./assets/img/greek.jpg" alt="" srcset="">
+                <h4>$1099 Greek islands & Night Vacation w/Air Save $1060</h4>
+                <p>This is the lowest price we've seen in four years for a one night</p>
+            </li>
+            <li>
+                <img src="./assets/img/ireland.jpg" alt="" srcset="">
+                <h4>$899 Ireland & Germany 6 Night Adventure w/Air</h4>
+                <p>This is the lowest price we've seen in four years for a one night</p>
+            </li>
+            <li>
+                <img src="./assets/img/moracco.jpeg" alt="" srcset="">
+                <h4>$1299 Morocco 4 Blue Escotland Vacation w/Air Save $1000</h4>
+                <p>This is the lowest price we've seen in four years for a one night</p>
+            </li>
+            <li>
+                <img src="./assets/img/cobo.jpg" alt="" srcset="">
+                <h4>$639 Cobo All Inchuave Daach Geteway w/Air save $250</h4>
+                <p>This is the lowest price we've seen in four years for a one night</p>
+            </li>
+            <li>
+                <img src="./assets/img/newzeland.jpeg" alt="" srcset="">
+                <h4>$2299 New Zealand Multi-City Trip w/Towe & car Rostet</h4>
+                <p>This is the lowest price we've seen in four years for a one night</p>
+            </li>
+            <li>
+                <img src="./assets/img/turkey.jpg" alt="" srcset="">
+                <h4>$1942 & up Turkey &  NL Trip w/Air Gulfdad Towers & Hotels</h4>
+                <p>This is the lowest price we've seen in four years for a one night</p>
+            </li>
+        </ul>
+    </section>
+    <!-- /destination section end  -->
+
+
+    <!-- estimate section start  -->
+    <section class="estimate container">
+        <h1>GET A QUICK ESTIMATE!</h1>
+        <p>GET A PROFESSIONAL HELP</p>
+
+        <form action=" " method="post">
+            <select name="travel" id="travel">
+                <option selected style="color: #808080;">Travel Purpose</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            
+            <label for="travel date"></label>
+            <input type="date" placeholder="Travel Date" id="travel date">
+    
+            <select name="people" id="people">
+                <option selected>Number of people</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+    
+            <label for="email"></label>
+            <input type="email" placeholder="Your Email" id="email">
+    
+            <button>CALCULATE NOW</button>
+        </form>
+        
+        <img src="./assets/img/rome1.png" alt="" srcset="">
+    </section>
+    <!-- /estimate section end  -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
