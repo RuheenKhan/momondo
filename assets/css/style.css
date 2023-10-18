@@ -155,6 +155,10 @@ header .left .active {
     
 }
 
+.banner form .pass {
+    padding: 8px 6px 10px 6px;
+}
+
 .banner form .fa-repeat {
     color: #A9D8FA;
 }
